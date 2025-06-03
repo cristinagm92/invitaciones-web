@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Cumpleaños</title>
+  <link rel="stylesheet" href="./scss/formulario.scss" />
+  <link rel="stylesheet" href="./scss/css.scss" />
+  <link rel="icon" href="./images/logo_editado.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ole&family=Twinkle+Star&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <load src="./partials/header-formulario.html" />
+  <section class="cris">
+    <!-- Contenedor formulario + tarjeta -->
+    <div class="form-container">
+      <!-- Formulario -->
+      <div class="formulariopart">
+        <h1>CREA TU INVITACIÓN</h1>
+        <form id="formulario" action="#" method="post">
+          <label for="tematica">Temática del evento:</label><br />
+          <select id="tematica" class="js-tematica" name="tematica" required>
+            <option value="tarjet" disabled selected>Blanca</option>
+            <option class="js_unicornio" value="unicornio">Unicornio</option>
+            <option class="js_superheroe" value="superheroe">
+              Superhéroe
+            </option>
+            <option class="js_festivo" value="festivo">
+              Festivo
+            </option>
+          </select><br /><br />
+
+          <label for="mensaje">Mensaje:</label><br />
+          <input type="text" class="js-mensaje" id="mensaje" name="mensaje" required /><br /><br />
+
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" class="js-nombre" id="nombre" name="nombre" required /><br /><br />
+
+          <label for="edad">Edad:</label><br />
+          <input type="number" class="js-edad" id="edad" name="edad" min="0" required /><br /><br />
+
+          <label for="fecha">Fecha del evento:</label><br />
+          <input type="date" class="js-fecha" id="fecha" name="fecha" required /><br /><br />
+
+          <label for="direccion">Dirección del evento:</label><br />
+          <input type="text" class="js-direccion" id="direccion" name="direccion" required /><br /><br />
+
+          <label for="hora">Hora del evento:</label><br />
+          <input type="time" class="js-hora" id="hora" name="hora" required /><br /><br />
+
+          <label for="email">Correo electrónico de contacto:</label><br />
+          <input type="email" class="js-email" id="email" name="email" required /><br /><br />
+
+          <label for="telefono">Teléfono de contacto:</label><br />
+          <input type="tel" class="js-telefono" id="telefono" name="telefono" required /><br /><br />
+
+          <button type="submit" class="js-boton">Enviar</button>
+          <p class="alert"></p>
+        </form>
+      </div>
+
+      <!-- Tarjeta -->
+      <div class="tarjet">
+        <p class="pmessage"></p>
+        <p class="pname"></p>
+        <p class="p-age"></p>
+        <p class="pdate"></p>
+        <p class="paddress"></p>
+        <p class="ptime"></p>
+        <p class="pemail"></p>
+        <p class="pphone"></p>
+        <button class="reset js_resetButton">reset</button>
+      </div>
+    </div>
+
+    <!-- GIF de Homer -->
+    <div class="homergiff">
+      <img src="https://c.tenor.com/XfLV1PmF88oAAAAC/homer-simpson-the-simpsons.gif" alt="Homer Simpson bailando"
+        width="70" height="70" class="homer" />
+    </div>
+    <a class="js-enlace"></a>
+  </section>
+  <load src="./partials/footer.html" />
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

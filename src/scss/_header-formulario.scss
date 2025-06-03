@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  padding-bottom: 20px;
+}
+
+.page_header {
+  /*background-color: #abc2d1;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+}
+
+.menu_overview {
+  background-color: white;
+  padding: 10px;
+  width: 50vw;
+  height: 25vh;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border: solid 2px #c5c490;
+}
+
+.hidden {
+  display: none;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_company {
+  font-size: 1.563em;
+  font-family: "Twinkle Star", cursive;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.links_header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  text-decoration: underline overline #c5c490;
+}
+
+.form_link,
+.contact_link {
+  text-decoration: none;
+  color: black;
+}
+
+.close_window {
+  position: absolute;
+  bottom: 10px;
+  width: 25px;
+}
+
+.links_desktop {
+  display: none;
+}
+
+.welcome_text {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 80px;
+    margin: 5px;
+  }
+  .content_header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links_desktop {
+    display: flex;
+    gap: 40px;
+    padding-right: 90px;
+    padding-top: 40px;
+  }
+
+  .form_link-desktop,
+  .contact_link-desktop {
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .links_desktop {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding-right: 80px;
+    padding-top: 30px;
+  }
+
+  .welcome_text {
+    display: inline;
+    font-size: 3.125em;
+    padding-top: 40px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(500px);
+    }
+    40% {
+      transform: translateX(200px);
+    }
+    60% {
+      transform: translateX(150px);
+    }
+    80% {
+      transform: translateX(75px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  .letra_I {
+    color: #bb1b47;
+    display: inline-block;
+    animation: slide 4s;
+  }
+  .letra_M {
+    color: #83db26;
+    display: inline-block;
+    animation: slide 5s;
+  }
+  .letra_A {
+    color: #edc139;
+    display: inline-block;
+    animation: slide 6s;
+  }
+  .letra_G {
+    color: #1f708f;
+    display: inline-block;
+    animation: slide 7s;
+  }
+  .letra_I {
+    color: #dc5602;
+    display: inline-block;
+    animation: slide 8s;
+  }
+  .letra_N {
+    color: #58cfc7;
+    display: inline-block;
+    animation: slide 9s;
+  }
+  .letra_E {
+    color: #2d6730;
+    display: inline-block;
+    animation: slide 10s;
+  }
+}

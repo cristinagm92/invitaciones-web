@@ -1,0 +1,97 @@
+
+
+
+main{
+    margin-bottom: 40px;
+  }
+.bigcontainer{
+    border-radius:5px;
+    display: flex;
+    /*background-color: whitesmoke;*/
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 0px 50px 0px;
+}
+
+.main_image{
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.main_image img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.containertext{
+    text-align: center;
+    margin-inline: 28px; 
+    padding: 10px;
+}
+
+.button_create{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    width: 100%;
+    a{
+        font-size: 20px;
+        border-radius: 41px;
+        background-color: greenyellow;
+        font-family: "Twinkle Star";
+        padding: 8px 1.6em 14px;
+        border-color: greenyellow;
+        border:0px;
+        text-decoration: none;
+    }
+}
+.title{
+    font-family: "Twinkle Star";
+    font-size: 40px
+};
+.subtitle{
+    font-family: "Twinkle Star";
+    padding-bottom: 15px;
+    font-size: 40px;
+};
+.description{
+    font-family:"Emilys Candy", serif;
+    font-size: 25px;
+    color: rgb(109, 104, 104);
+};
+
+
+@media only screen and (min-width: 768px) {
+    .bigcontainer{
+        flex-direction: row;
+        padding: 12% 0px 12% 0px;
+    }
+    .main_image img{
+        height: 250px;
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+   
+    .main_image img{
+        height: 521px;
+        width: 384px;
+    }
+    .containertext{
+        text-align: center;
+        font-size: 29px;
+    }
+    .main_image{
+        max-width: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+}

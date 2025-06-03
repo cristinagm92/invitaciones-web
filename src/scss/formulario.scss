@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("../images/background.jpg") ;
+  background-size: height 100%, width 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cris {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* GRID para formulario y tarjeta */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Homer GIF */
+.homergiff {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.homer {
+  border-radius: 10px;
+}
+
+/* Tarjeta de resultado */
+.tarjet {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80%;
+
+}
+.tarjet p{
+  padding: 11px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.pmessage {
+  margin-top: 15%;
+}
+
+.unicornio {
+  background-image: url("../images/unicornio1.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80%;
+  text-align: center;
+}
+
+.superheroe {
+  background-image: url("../images/superheroe1.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80%;
+  text-align: center;
+}
+
+.festivo {
+  background-image: url("../images/festivo1.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 80%;
+  text-align: center;
+}
+
+/* Formulario */
+.formulariopart {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE: Pantallas grandes */
+@media (min-width: 670px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .formulariopart,
+  .tarjet {
+    width: 100%;
+    margin: 0;
+  }
+
+  .homergiff {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+}
+
+.reset {
+  position: absolute;
+  left: 73%;
+  top: 68%;
+  
+  
+}
+.alert {
+  color: red;
+}
